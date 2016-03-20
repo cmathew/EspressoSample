@@ -13,7 +13,7 @@ dependencies:
     - mkdir /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM
     - cp hardware.ini /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM/
     - cp layout /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM/
-    - cp config.ini /home/ubuntu/.android/avd/circleci-android22.avd
+    - cp config.ini /home/ubuntu/.android/avd/circleci-android22.avd/
 
 test:
   override:
