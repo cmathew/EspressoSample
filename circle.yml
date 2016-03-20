@@ -10,6 +10,10 @@ dependencies:
     - wget "https://services.gradle.org/distributions/gradle-2.9-bin.zip"; unzip gradle-2.9-bin.zip
     - echo y | android update sdk --no-ui --all --filter tool,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository,android-23
     - echo y | android update sdk --no-ui --all --filter build-tools-23.0.2
+    - mkdir /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM
+    - cp hardware.ini /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM/
+    - cp layout /usr/local/android-sdk-linux/platforms/android-22/skins/EARTHWORM/
+    - cp config.ini /home/ubuntu/.android/avd/circleci-android22.avd
 
 test:
   override:
